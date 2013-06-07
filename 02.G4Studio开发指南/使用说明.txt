@@ -2,11 +2,11 @@
 =======================================
 1.必须安装Adobe Reader10.0以上版本。(PDF阅读器)
 如程序启动出错，请卸载当前已安装版本，重新安装如下地址提供的版本。
-http://vdisk.weibo.com/s/8FnGN
+http://pan.baidu.com/share/link?shareid=3209499985&uk=456149642
 
 2.运行G4StudioReader.exe，输入注册码。
 
 3.如何获取注册码
 《G4Studio开发指南》为G4Studio平台衍生的收费产品(￥68.00元/注册码)，是目前唯一官方发布最全面系统的介绍G4Studio平台的宝典级文档。
 付费方式和更多信息请访问如下网页。
-http://www.g4studio.org/thread-447-1-1.html
+http://www.g4it.org/thread-447-1-1.html
