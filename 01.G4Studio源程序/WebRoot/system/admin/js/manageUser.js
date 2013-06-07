@@ -728,6 +728,7 @@ Ext.onReady(function() {
 			return;
 		}
 		addUserFormPanel.getForm().loadRecord(record);
+		usertypeCombo.setReadOnly(true);
 		addUserWindow.show();
 		addUserWindow.setTitle('<span class="commoncss">修改人员</span>');
 		Ext.getCmp('windowmode').setValue('edit');
@@ -736,6 +737,7 @@ Ext.onReady(function() {
 		Ext.getCmp('password1').setValue('@@@@@@');
 		Ext.getCmp('userid').setValue(record.get('userid'));
 		Ext.getCmp('btnReset').hide();
+		
 	}
 
 	/**
