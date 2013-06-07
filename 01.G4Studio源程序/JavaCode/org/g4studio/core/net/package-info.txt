@@ -1,0 +1,7 @@
+此package及其所有subpackage源码来自Apache软件基金会旗下项目
+Apache Common Net(版本V1.4.1) 
+
+修改记录
+--------
+1.重构了包名.
+2.FTP.java,编码设定支持中文路径和中文文件名.

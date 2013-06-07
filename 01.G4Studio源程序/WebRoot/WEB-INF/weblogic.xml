@@ -1,0 +1,25 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90"
+	xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.bea.com/ns/weblogic/90
+    http://www.bea.com/ns/weblogic/90/weblogic-web-app.xsd">
+	<container-descriptor>
+		<prefer-web-inf-classes>true</prefer-web-inf-classes>
+	</container-descriptor>
+	
+	<context-root>/G4</context-root>
+	
+	<!--  
+	<session-descriptor>
+		<cookie-http-only>false</cookie-http-only>
+	</session-descriptor>
+    -->
+    
+    <!--  
+    <virtual-directory-mapping>
+		<local-path>d:/catalogfiles/</local-path>
+		<url-pattern>/resource/*</url-pattern>
+	</virtual-directory-mapping>
+    -->
+    
+</weblogic-web-app> 

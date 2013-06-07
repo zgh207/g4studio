@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<!-- 业务系统的SQL映射文件装载 -->
+<sqlMapConfig>
+	<settings useStatementNamespaces="true" />
+	<!-- 请将此配置改为您的业务系统包路径下的SQL映射文件 -->
+	<sqlMap resource="org/g4studio/demo/dao/sqlmap/biz/Temp.xml" />
+</sqlMapConfig>

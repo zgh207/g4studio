@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- G4Studio JavaDoc API导出脚本 -->
+<project name="G4Studio" default="startup" basedir="../../">
+	
+	<!-- 初始化 -->
+	<target name="init">
+		<property name="name" value="G4Studio" />
+		<property name="src" value="${basedir}/JavaCode" />
+		<property name="lib" value="${basedir}/Lib" />
+		<property name="packages" value="org.g4studio.*"/>  
+		
+		<property name="temp.src" value="${basedir}/AntBuild/src" />
+		<property name="build" value="${basedir}/AntBuild/G4Studio" />
+		<property name="build.bin" value="${basedir}/AntBuild/G4Studio/WEB-INF/classes" />
+		<property name="build.javadoc" value="${basedir}/AntBuild/javadoc"/> 
+
+		<path id="classpath">
+			<fileset dir="${lib}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+	</target>
+
+	<!-- 准备临时资源 -->
+	<target name="prepare" depends="init">
+		<echo message="正在创建目录,复制相关资源..." />
+		<mkdir dir="${temp.src}" />
+		<mkdir dir="${build.bin}" />
+		<copy todir="${temp.src}">
+			<fileset dir="${src}" />
+		</copy>
+	</target>
+
+	<!-- 编译源文件 -->
+	<target name="build" depends="prepare">
+		<echo message="正在编译源文件..." />
+		<javac srcdir="${temp.src}" destdir="${build.bin}" encoding="utf-8">
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+	
+	<!-- 生成JavaDoc文档 -->
+    <target name="javadoc" depends="build">  
+    	<echo message="正在生成JavaDoc..." />
+        <mkdir dir="${build.javadoc}"/>  
+        <javadoc packagenames="${packages}" sourcepath="${temp.src}" encoding="utf-8" charset="utf-8" destdir="${build.javadoc}" author="true" version="true" use="true" splitindex="true" windowtitle="${name} API" doctitle="${name}">  
+            <classpath refid="classpath"/>  
+        </javadoc>  
+    </target> 
+	
+	<!-- 清除临时资源 -->
+    <target name="clean" depends="javadoc">   
+    	<echo message="正在清除缓存资源..." />
+    	<delete dir="${temp.src}"/>  
+    	<delete dir="${build}"/>  
+    </target>
+	
+	<!-- 启动 -->
+	<target name="startup" depends="clean">
+
+	</target>
+</project>

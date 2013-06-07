@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<!-- G4系统级SQL语句映射装载.批注:业务系统的SQL语句请加入到app.sqlmap.xml文件 -->
+<sqlMapConfig>
+	<settings useStatementNamespaces="true" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/Organization.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/Resource.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/User.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/Role.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/Param.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/IdGenerator.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/ArmTagSupport.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/Monitor.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/Part.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/DevToolkit.Oracle.xml" />
+	<sqlMap resource="org/g4studio/system/common/dao/sqlmap/biz/DevToolkit.Mysql.xml" />
+	<sqlMap resource="org/g4studio/demo/dao/sqlmap/biz/Demo.xml" />
+</sqlMapConfig>
